@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+	xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1" 
+	xmlns:wsdli="http://www.w3.org/2004/08/wsdl-instance"
+	name="fuenteCom5">
+	
+	<!-- Componente Servidor -->
+	<component name="fuente">
+		<!-- Interfaz donde se definen los servicios -->
+		<service name="fuente_5">
+			<interface.java interface="interfaces.ServicioResolverSopa"/>
+			<frascati:binding.rmi host="localhost" serviceName="rmiService5" port="1098"/>
+		</service>
+		
+		<!-- Clase 	que implementa el servicio -->
+		<implementation.java class="cliente.ClienteImpl"/>
+		
+	</component>
+	
+
+</composite>

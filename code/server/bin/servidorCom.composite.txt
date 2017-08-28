@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composite xmlns="http://www.osoa.org/xmlns/sca/1.0"
+	xmlns:frascati="http://frascati.ow2.org/xmlns/sca/1.1" 
+	xmlns:wsdli="http://www.w3.org/2004/08/wsdl-instance"
+	name="servidorCom">
+           
+           <component name="s">
+            
+            
+           	<service name="servicioResolverSopa">
+           		<interface.java interface="interfaces.ServicioResolverSopa"/>
+           		
+           		<frascati:binding.rmi port="1090" host="localhost" serviceName="rmiService" />
+           		
+           	</service>
+           
+           <implementation.java class="servicios.ResolverSopaImpl" />
+           
+           </component>
+           
+</composite>
+           

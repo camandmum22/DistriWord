@@ -1,0 +1,11 @@
+6x5
+
+B,Q,G,A,R,K
+M,O,T,A,C,R
+D,O,G,M,R,A
+Q,Q,Z,B,J,B
+Q,Q,c,a,t,B
+
+DOG
+CAT
+BARK
